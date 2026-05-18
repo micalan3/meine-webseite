@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Meine Webseite</title>
   <style>
+    :root {
+      /* HIER KÖNNEN SIE IHRE FARBEN ANPASSEN */
+      --hintergrund-farbe: #f4f7f6; /* Helles Graublau für den Hintergrund */
+      --text-farbe: #2c3e50;        /* Dunkles Blau-Grau für gute Lesbarkeit */
+      --ueberschrift-farbe: #e76f51;/* Schönes Terracotta/Orange für den Titel */
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #222;
+      background: var(--hintergrund-farbe);
+      color: var(--text-farbe);
       text-align: center;
       padding: 2rem;
       margin: 0;
     }
     h1 {
-      color: #2a9d8f;
+      color: var(--ueberschrift-farbe);
       margin-bottom: 1rem;
     }
     p {
@@ -23,7 +30,7 @@
     }
     img {
       width: 100%;
-      max-width: 400px; /* Begrenzt die Bildbreite, damit es nicht zu groß wird */
+      max-width: 400px;
       height: auto;
       border-radius: 8px;
       margin: 1rem 0;
@@ -35,7 +42,6 @@
   <h1>Willkommen!</h1>
   <p>Schön, dass du hier bist.</p>
 
-  <!-- Bild einfügen (Achten Sie darauf, dass der Dateiname im Repository exakt übereinstimmt) -->
   <img src="mein-bild.jpg" alt="Beschreibung des Bildes" />
 
   <p>Mehr folgt bald.</p>
